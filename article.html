@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+}
+h2{
+    font-size: 45px;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+p{
+    font-weight: 500;
+    font-size: larger;
+    color: white;
+}
+.center-content h1{
+    color: white;
+    font-size: 100px;
+}
+.center-content p{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+
+}
+
+
+.our-logo{
+    font-family: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+
+}
+
+.navigation-login a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation-login a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:  3px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform: scaleX(0)
+}
+
+.navigation-login a:hover::after{
+    transform-origin: left;
+    transform:scaleX(1)
+
+}
+
+.navigation-login .btnlogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: 1.1em;
+    color: rgb(47, 0, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 2.5s;
+}
+
+.navigation-login .btnlogin:hover{
+    background: burlywood;
+    color: black;
+}
+
+
+.huge{
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+h1{
+    color: palevioletred;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="our-logo">TechTribe</h2>
+        <nav class="navigation-login">
+            <a href="home.html">home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html" target="_blank">courses</a>
+            <a href="team.html">Team</a>
+            <button class="btnlogin"><a href="login.html">Logout</a></button>
+        </nav>
+    </header>
+    <h2>ARE YOU A DEVELOPER OR A NEWBIE VENTURING INTO TECH? HERE'S AN ARTICLE FOR YOU</h2>
+    <p>Unlocking a World of Opportunities
+        The computing industry has undergone tremendous growth and transformation over the years, revolutionizing the way we live, work, and interact with one another. From the development of software applications to the protection of computer systems and networks, computing encompasses a vast array of courses and fields that offer numerous opportunities for individuals to pursue their passions and build successful careers.</p>
+    <h1>SOFTWARE ENGINEERING</h1>
+        <p>
+            Software engineering is the development, testing, and maintenance of software applications. It involves the application of engineering principles and techniques to the design and development of software systems. Software engineers work on a wide range of projects, from mobile apps and video games to operating systems and enterprise software.
+        </p>
+    <h1>CYBER SECURITY</h1>
+        <p>
+            Cybersecurity is the protection of computer systems and networks from cyber threats. Cybersecurity professionals use a variety of techniques, including firewalls, encryption, and intrusion detection systems, to protect computer systems and networks from unauthorized access. Cybersecurity is a critical field that requires highly skilled professionals to protect sensitive information and prevent cyber attacks.
+        </p>
+    <h1>DATA SCIENCE</h1>
+        <p>
+            Combines statistics, machine learning, and computing to extract insights from data. This field is critical in sectors like finance, healthcare, and marketing.
+        </p>
+    <h1>MACHINE LEARNING</h1>
+        <p>
+            Machine learning is a subset of AI that enables systems to learn from data and improve their performance. ML algorithms can be used for a wide range of applications, including image recognition, speech recognition, and predictive modeling. ML is a rapidly growing field that has numerous applications in industries such as finance, healthcare, and marketing.
+        </p>
+    <h1>COMPUTER SCIENCE</h1>
+        <p>
+            Computer science is the study of algorithms, programming languages, and computer systems. It involves the design, development, and testing of computer programs, as well as the analysis of algorithms and data structures. Computer science is a fundamental field that has numerous applications in various industries, including healthcare, finance, and education.
+        </p>
+    <h1>INFO TECHNOLOGY</h1>
+        <p>
+            Information technology focuses on the design, implementation, and management of computer systems and networks. IT professionals are responsible for ensuring that computer systems operate efficiently and effectively, and that they meet the needs of users. IT is a broad field that encompasses a wide range of specialties, including network administration, database management, and cybersecurity.
+        </p>
+
+    <h1>CLOUD COMPUTING</h1>
+        <P>Cloud computing is the delivery of computing services over the internet, including storage, processing, and software. Cloud computing enables users to access computing resources on-demand, without the need for expensive hardware or infrastructure. Cloud computing has numerous applications in industries such as finance, healthcare, and education.</P>
+
+    <h1>INTERNET OF THINGS(IOT)</h1>
+        <P>The Internet of Things is the connection of physical devices to the internet, enabling them to collect and exchange data. IoT has numerous applications in industries such as manufacturing, transportation, and healthcare. IoT devices can be used to monitor and control physical systems, track inventory, and optimize business processes.</P>
+
+    <h1>BLOCKCHAIN</h1>
+        <p>Blockchain is a decentralized, secure way to record transactions and manage data. Blockchain technology uses a distributed ledger to record transactions, enabling secure and transparent data management. Blockchain has numerous applications in industries such as finance, supply chain management, and healthcare.</p>
+    
+    <h2>CAREER OPORTUNITIES</h2>
+    <h1>The computing industry offers a wide range of career opportunities, including:</h1>
+
+    <h1>Software Developer</h1>
+        <p>Software developers design and develop software applications. They work on a wide range of projects, from mobile apps and video games to operating systems and enterprise software.</p>
+
+    <h1>Data Analysts</h1> 
+        <p>Data analysts and scientists analyze complex data sets to identify trends and patterns. They use machine learning algorithms, data visualization techniques, and statistical models to extract insights and knowledge from data.</p>
+
+    <h1>Cybersecurity Specialist</h1>
+        <p>Cybersecurity specialists protect computer systems and networks from cyber threats. They use a variety of techniques, including firewalls, encryption, and intrusion detection systems, to protect sensitive information and prevent cyber attacks.</p>
+
+    <h1>AI/ML Engineer</h1>
+        <p>AI/ML engineers develop intelligent systems and algorithms. They work on a wide range of projects, from image recognition and speech recognition to predictive modeling and natural language processing.</p>
+
+    <h1>IT Project Manager</h1>
+        <p>IT project managers oversee the planning, execution, and delivery of IT projects. They work with stakeholders to define project scope, schedule, and budget, and ensure that projects are completed on time and within budget.</p>
+
+
+    <h2>Exploring Computing Courses and Fields: A Guide for Aspiring Tech Professionals</h1>
+
+    <h3>In today's digital era, computing has become a backbone of innovation, revolutionizing industries from healthcare to entertainment. As technology continues to evolve, so too do the educational opportunities for those looking to enter or advance within the computing field. Whether you're a high school graduate exploring future studies or a professional considering a career shift, understanding computing courses and the diverse fields they open up can help you make informed choices.
+
+        Understanding Computing as a Discipline
+        Computing is a broad field that encompasses the study of computers and computational systems. Unlike electrical engineering or pure mathematics, computing focuses on the design, development, and application of software and systems to solve real-world problems.
+        </h3>
+    <h1>Popular Computing Courses</h1>
+        <p>Computing courses are typically offered at the diploma, undergraduate, and postgraduate levels. Common courses include:
+        </p>
+    <h1>Computer Science</h1>
+        <p>Focuses on algorithms, data structures, programming languages, and software development. Core subjects often include operating systems, databases, artificial intelligence (AI), and computer networks.
+        </p>
+    <h1>Information Technology (IT)</h1>
+        <p>Centers on the practical use of computer systems and networks to process and distribute information. IT students often learn about cybersecurity, cloud computing, and systems administration.
+        </p>
+    <h1>Software Engineering</h1>
+        <p>Emphasizes the development and maintenance of reliable software systems. Students study project management, software testing, and development life cycles.
+        </p>
+    <h1>Data Science and Analytics</h1>
+        <p>Combines statistics, machine learning, and computing to extract insights from data. This field is critical in sectors like finance, healthcare, and marketing.
+        </p>
+    <h1>Cybersecurity</h1>
+        <p>Focuses on protecting systems and data from digital attacks. Courses cover cryptography, ethical hacking, and information security management.
+        </p>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+        <p>Delves into the development of smart systems capable of learning and adapting. Topics include neural networks, natural language processing, and robotics.
+        </p>
+    <h1>Computer Engineering</h1>
+        <p>Bridges the gap between electrical engineering and computer science, focusing on hardware-software integration.</p>
+
+    <h2>Emerging Fields in Computing</h2>
+    <h1>With technological progress, new computing fields are emerging, offering exciting career paths:</h1>
+
+        <p class="huge">
+            Quantum Computing – Investigates computation using quantum-mechanical phenomena. |<br>
+
+            Human-Computer Interaction (HCI) – Enhances user experience through design and usability. |<br>
+            
+            Blockchain Technology – Powers secure digital transactions and decentralized applications. |<br>
+            
+            Augmented and Virtual Reality (AR/VR) – Redefines experiences in gaming, education, and training.
+        </p>
+</body>
+<script src="script.js"></script>
+</html>
