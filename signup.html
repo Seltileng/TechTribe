@@ -119,7 +119,7 @@
         }
         .form-registration-box h2{
             font-size: 2em;
-            color: indigo;
+            color: rgb(255, 255, 255);
             text-align: center;
 
         }
@@ -188,7 +188,7 @@
             position: absolute;
             right: 8px;
             font-size: 1.2em;
-            color: indigo;
+            color: rgb(255, 255, 255);
             line-height: 57px;
         }
 
@@ -243,6 +243,9 @@
             text-decoration: underline;
 
         }
+        .btn a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -258,11 +261,11 @@
     
 
         <div class="form-registration-box">
-            <h2>REGISTER</h2>
+            <h2>SIGN UP</h2>
             <form action="#">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="username" required>
                     <label>USERNAME</label>
                 </div>
                 <div class="input-box">
@@ -272,14 +275,14 @@
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="text" required>
+                    <input type="password" required>
                     <label>PASSWORD</label>
                 </div>
                 <div class="rem-forgot-pwd">
                     <label><input type="checkbox">I agree to the Terms & Conditions </label>
                     <a href="#">Terms & Conditions</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" onclick="signupMessage()"><a href="login.html">SIGN UP</a></button>
                 <div class="login-register">
                     <p>Already have an account?<a href="#" class="register-link">Login</a></p>
                 </div>

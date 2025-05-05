@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         *{
             margin: 0;
@@ -113,29 +112,6 @@
             transform: scale(1);
         }
 
-        .wrapper .form-box{
-            width: 100%;
-            padding: 40px;
-
-        }
-        .wrapper .form-login-box{
-            transition: transform .18s ease;
-            transform: translateX(0);
-
-        }
-        .wrapper .form-login-box{
-            display: none;
-
-        }
-        .wrapper.active .form-login-box{
-            transition: none;
-            transform: translateX(-400px);
-        }
-        .form-login-box h2{
-            font-size: 2em;
-            color: indigo;
-            text-align: center;
-        }
         .wrapper.active .form-registration-box{
             transition: transform .18s ease;
             transform: translateX(0);
@@ -143,7 +119,7 @@
         }
         .form-registration-box h2{
             font-size: 2em;
-            color: indigo;
+            color: rgb(255, 255, 255);
             text-align: center;
 
         }
@@ -162,10 +138,6 @@
             border-bottom-left-radius: 20px;
             cursor: pointer;
             z-index: 1;
-        }
-        .wrapper .form-login-box{
-            width: 100px;
-            padding: 40px;
         }
         .wrapper .form-registration-box{
             position: absolute;
@@ -216,7 +188,7 @@
             position: absolute;
             right: 8px;
             font-size: 1.2em;
-            color: indigo;
+            color: rgb(255, 255, 255);
             line-height: 57px;
         }
 
@@ -271,6 +243,9 @@
             text-decoration: underline;
 
         }
+        .btn a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -285,11 +260,14 @@
     </header>
     
 
-    <div class="wrapper">
-        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-        <div class="form-login-box">
+        <div class="form-registration-box">
             <h2>LOGIN</h2>
             <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="username" required>
+                    <label>USERNAME</label>
+                </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
                     <input type="email" required>
@@ -301,47 +279,18 @@
                     <label>PASSWORD</label>
                 </div>
                 <div class="rem-forgot-pwd">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btnlogin-popup">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account?<a href="#" class="login-link">Create</a></p>
-                </div>
-            </form>
-        </div>
-
-        <div class="form-registration-box">
-            <h2>REGISTER</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="email" required>
-                    <label>USERNAME</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>EMAIL</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="text" required>
-                    <label>PASSWORD</label>
-                </div>
-                <div class="rem-forgot-pwd">
                     <label><input type="checkbox">I agree to the Terms & Conditions </label>
                     <a href="#">Terms & Conditions</a>
                 </div>
-                <button type="submit" class="btnlogin-popup">Login</button>
+                <button type="submit" class="btn" onclick="loginMessage()"><a href="courses.html">LOGIN</a></button>
                 <div class="login-register">
-                    <p>Already have an account?<a href="#" class="register-link">Login</a></p>
+                    <p>Don't have an account?<a href="signup.html" class="register-link">sign up</a></p>
                 </div>
             </form>
         </div>
     </div>
 </body>
-<script src="script2.js">
+<script src="script.js">
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

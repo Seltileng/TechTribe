@@ -4,8 +4,307 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechTribe</title>
-    <link rel="stylesheet" href="style.css">
+   <!---- <link rel="stylesheet" href="style.css">-->
     <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/wymy1q.jpg') no-repeat;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(3, 0, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+}
+h2{
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+p{
+    font-weight: 500;
+    font-size: larger;
+    color: whitesmoke;
+}
+.center-content h1{
+    color: white;
+    font-size: 100px;
+}
+.center-content p{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+
+}
+.course-content .course-enighten p a{
+    text-decoration: none;
+    color: burlywood;
+}
+.video-bg{
+    position: absolute;
+    min-width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.our-logo{
+    font-family: 2em;
+    color: aliceblue;
+    user-select: none;
+
+}
+
+.navigation-login a{
+    position: relative;
+    font-size: 1.1em;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation-login a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:  3px;
+    background: whitesmoke;
+    border-radius: 5px;
+    transform: scaleX(0)
+}
+
+.navigation-login a:hover::after{
+    transform-origin: left;
+    transform:scaleX(1)
+
+}
+
+.navigation-login .btnlogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: 1.1em;
+    color: rgb(47, 0, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 2.5s;
+}
+
+.navigation-login .btnlogin:hover{
+    background: burlywood;
+    color: black;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border:2px solid greenyellow;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: height .2s ease;
+    transition: transform .5s , height .2s ease;
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+
+}
+.wrapper .form-login-box{
+    transition: transform .18s ease;
+    transform: translateX(0);
+
+}
+.wrapper .form-login-box{
+    display: none;
+
+}
+.wrapper.active .form-login-box{
+    transition: none;
+    transform: translateX(-400px);
+}
+.form-login-box h2{
+    font-size: 2em;
+    color: indigo;
+    text-align: center;
+}
+.wrapper.active .form-registration-box{
+    transition: transform .18s ease;
+    transform: translateX(0);
+
+}
+.form-registration-box h2{
+    font-size: 2em;
+    color: indigo;
+    text-align: center;
+
+}
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: aquamarine;
+    font-size: 2em;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.wrapper .form-login-box{
+    width: 100px;
+    padding: 40px;
+}
+.wrapper .form-registration-box{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid greenyellow;
+    margin: 30px 0;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: aquamarine;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 3s;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: greenyellow;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: indigo;
+    line-height: 57px;
+}
+
+.rem-forgot-pwd{
+    font-size: .9em;
+    color: blanchedalmond;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.rem-forgot-pwd label input{
+    accent-color: yellowgreen;
+    margin-right: 3px;
+
+}
+.rem-forgot-pwd a{
+    color: yellowgreen;
+    text-decoration: none;
+
+}
+.rem-forgot-pwd a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: burlywood;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: blue;
+    font-weight: 500;
+
+}
+.login-register{
+    font-size: .9em;
+    color: blanchedalmond;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: yellowgreen;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+
+}
         img{
             width: 200PX;
             height: 100%;
@@ -16,9 +315,10 @@
         }
         .contact-container{
             background: rgb(255, 255, 255);
-            padding: 120px;
+            padding: 100px;
             margin: 20px;
             justify-content: 10px space-between;
+            
         }
         h3{
             color: palevioletred;
@@ -47,7 +347,84 @@
             text-align: center;
             color: black;
         }
+        .contact-container form{
+            align-items: center;
+            display: block;
+
+        }
+        .footer {
+    background: rgb(0, 0, 0);
+  padding: 0px ;
+  margin: 2%;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 0px 20px 20px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.text-sm{
+    color: palevioletred;
+}
+.btn-btn-sub{
+    height: 30px;
+    width: 80px;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+h4{
+    color: palevioletred;
+}
+hr{
+    color: hotpink;
+}
+
+.the-team{
+    display: flex;
+    gap: 10px  ;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
     </style>
+
 </head>
 <body>
     <header>
@@ -60,6 +437,7 @@
     </header>
     
     <h1>OUR TEAM</h1>
+<div class="the-team">    
     <div class="personal">
         <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
         <h1>SEDICRYPTIC</h1>
@@ -90,7 +468,7 @@
         <h3>CO-FOUNDER, DEV-OPS ENG</h3>
         <p></p>
     </div>
-
+</div>
     <form>
 
     </form>
@@ -103,13 +481,62 @@
             <input type="text" placeholder="ENTER YOUR NAME">
             <input type="email" placeholder="ENTER YOUR EMAIL">
             <input type="textarea" placeholder="ENTER YOUR MESSAGE">
-            <button>SUBMIT</button>
+            <button onclick="displayMessage()">SUBMIT</button>
         </form>
     </div>
 </section>
 
-<footer>
-
-</footer>
+<hr>
+<footer class="footer bg-white">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="home.html">
+            <h3>TechTribe</h3>
+          </a>
+          <div class="card">
+            <h4>Subscribe to Newsletter</h4>
+            <p class="text-sm">
+              Subscribe now to receive tips on how to take your business to
+              the next level.
+            </p>
+            <form>
+              <input type="email" id="email" placeholder="Enter your email" />
+              <button type="submit" class="btn-btn-sub" onclick="displayMessage()" value="show alert box">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="article.html">Our Process</a></li>
+            <li><a href="team.html">Our Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Team</a></li>
+            <li><a href="notavailable.html">Research</a></li>
+            <li><a href="notavailable.html">Upcoming Projects</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="notavailable.html">techtribeofficial@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr>
 <script src="script.js"></script>
 </html>

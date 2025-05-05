@@ -302,6 +302,69 @@ a{
     text-decoration: underline;
 
 }
+
+.footer {
+    background: rgb(0, 0, 0);
+  padding: 0px ;
+  margin: 2%;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 0px 20px 20px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.text-sm{
+    color: palevioletred;
+}
+.btn-btn-sub{
+    height: 30px;
+    width: 80px;
+    color: black;
+    font-weight: 500;
+}
+h4{
+    color: palevioletred;
+}
+hr{
+    color: hotpink;
+}
+h6{
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -313,9 +376,64 @@ a{
         </nav>
     </header>
 
-    
+    <article>
+        <h6>TechTribe</h6>
+        <hr>
 
+    </article>
 
+    <hr>
+    <footer class="footer bg-white">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a href="home.html">
+                <h3>TechTribe</h3>
+              </a>
+              <div class="card">
+                <h4>Subscribe to Newsletter</h4>
+                <p class="text-sm">
+                  Subscribe now to receive tips on how to take your business to
+                  the next level.
+                </p>
+                <form>
+                  <input type="email" id="email" placeholder="Enter your email" />
+                  <button type="submit" onclick="displayMessage()" class="btn-btn-sub">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div>
+              <h4>Company</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="article.html">Our Process</a></li>
+                <li><a href="team.html">Our Team</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="notavailable.html">Research</a></li>
+                <li><a href="notavailable.html">Upcoming Projects</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  <a href="notavailable.html">techtribeofficial@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <hr>
 </body>
 <script src="script.js"></script>
 </html>
