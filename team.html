@@ -18,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('img/wymy1q.jpg') no-repeat;
+    /*background: url('img/wymy1q.jpg') no-repeat;*/
     margin-top: 100px;
     background-size: cover;
     background-position: center;
@@ -306,50 +306,59 @@ a{
 
 }
         img{
-            width: 200PX;
-            height: 100%;
+            width: 500PX;
+            height: 500px;
             justify-content: 70px space-between;
+            border-radius: 500px;
+            padding: 30px;
         }
         section{
-            background: url('img/wymy1q.jpg');
+            background: black;
         }
         .contact-container{
-            background: rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
             padding: 100px;
+            margin-top: 1500px;
             margin: 20px;
             justify-content: 10px space-between;
             
         }
         h3{
             color: palevioletred;
+            margin-top: 140px;
         }
         h1{
             color: bisque;
+            margin-top: 130px;
+            margin-left: 30px;
         }
         button{
             height: 40px;
             width: 100px;
             border-radius: 10px ;
             color: orangered;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             border: none;
             font-weight: 900;
         }
         input{
             height: 40px;
+            
 
         }
         .contact-container h1{
             text-align: center;
-            color: black;
+            color: palevioletred;
         }
         .contact-container p{
             text-align: center;
-            color: black;
+            color: palevioletred;
         }
         .contact-container form{
+            justify-content: center;
             align-items: center;
-            display: block;
+            display: flex;
+            justify-content: center;
 
         }
         .footer {
@@ -414,15 +423,47 @@ hr{
 }
 
 .the-team{
-    display: flex;
-    gap: 10px  ;
+    display: block;
+    gap: 100px  ;
     justify-content: center;
+    align-content: center;
 }
 
-h1{
+
+
+section{
+    height: 50vh;
+}
+
+.the-team .personal{
+    background-color: black;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+h6{
+    position: relative;
     text-align: center;
-}
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-left: 20px;
 
+    
+}
+p{
+    position: absolute;
+    margin-left: 850px;
+    margin-right: 60px;
+    margin-top: -300px;
+}
+h5{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
     </style>
 
 </head>
@@ -436,51 +477,48 @@ h1{
         </nav>
     </header>
     
-    <h1>OUR TEAM</h1>
+    <h6>OUR TEAM</h6>
 <div class="the-team">    
     <div class="personal">
-        <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
+        <img src="img/team/exclusive/1737709467045.jpg" alt="">
         <h1>SEDICRYPTIC</h1>
         <h3>FOUNDER, BLOCKCHAIN DEVELOPER</h3>
-        <p></p>
+       
     </div>
+        <p>A student of the Nigerian Army Univeristy, Bui, Borno. the founder of TechTribe eyrtghjklnnkjfhdcfvhbjknkkljiugfyd</p>
     <div class="personal">
-        <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
-        <h1>SEDICRYPTIC</h1>
-        <h3>CO-FOUNDER, C.E.O, SYSTEMS ENGINEER</h3>
-        <p></p>
+        <img src="img/team/exclusive/1737709467045.jpg" alt="">
+        <h1>TimTech-Touch</h1>
+        <h3>CO-FOUNDER, C.E.O, SYSTEMS ENGINEER</h3>  
     </div>
+        <p></p>
     <div class="personal">
-        <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
-        <h1>SEDICRYPTIC</h1>
+        <img src="img/team/exclusive/IMG-20250503-WA0008.jpg" alt="">
+        <h1>MAN LIKE POPE</h1>
         <h3>SENIOR UI/UX DEVELOPER</h3>
-        <p></p>
     </div>
+        <p></p>
     <div class="personal">
-        <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
-        <h1>SEDICRYPTIC</h1>
+        <img src="img/team/exclusive/IMG-20250503-WA0006.jpg" alt="">
+        <h1>KING</h1>
         <h3>CO-FOUNDER, DATA ANALYST</h3>
-        <p></p>
     </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio laborum, nam optio veritatis dolore, consequatur doloribus molestiae consectetur, reprehenderit harum ratione sapiente voluptates eius eligendi nulla et ducimus! Eius, nulla.</p>
     <div class="personal">
-        <img src="img/team/exclusive/Snapchat-347720562.jpg" alt="">
+        <img src="img/team/exclusive/Snapchat-2075862107.jpg" alt="">
         <h1>SEDICRYPTIC</h1>
         <h3>CO-FOUNDER, DEV-OPS ENG</h3>
-        <p></p>
     </div>
+        <p></p>
 </div>
-    <form>
-
-    </form>
-</body>
 <section>
     <div class="contact-container">
         <h1>CONTACT US</h1>
-        <P>We Would Love To hear From you!</P>
+        <h5>We Would Love To hear From you!</h5>
         <form>
-            <input type="text" placeholder="ENTER YOUR NAME">
-            <input type="email" placeholder="ENTER YOUR EMAIL">
-            <input type="textarea" placeholder="ENTER YOUR MESSAGE">
+            <input type="text" placeholder="ENTER YOUR NAME" required>
+            <input type="email" placeholder="ENTER YOUR EMAIL" required>
+            <input type="textarea" placeholder="ENTER YOUR MESSAGE" required>
             <button onclick="displayMessage()">SUBMIT</button>
         </form>
     </div>
@@ -496,10 +534,10 @@ h1{
           </a>
           <div class="card">
             <h4>Subscribe to Newsletter</h4>
-            <p class="text-sm">
+            <h4 class="text-sm">
               Subscribe now to receive tips on how to take your business to
               the next level.
-            </p>
+            </h4>
             <form>
               <input type="email" id="email" placeholder="Enter your email" />
               <button type="submit" class="btn-btn-sub" onclick="displayMessage()" value="show alert box">
@@ -537,6 +575,11 @@ h1{
       </div>
     </div>
   </footer>
-  <hr>
-<script src="script.js"></script>
+</body>
+
+<script>
+    function displayMessage(){
+    alert("successful")
+}
+</script>
 </html>
