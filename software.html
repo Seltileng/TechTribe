@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+}
+h2{
+    font-size: 45px;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+p{
+    font-weight: 500;
+    font-size: larger;
+    color: white;
+}
+.center-content h1{
+    color: white;
+    font-size: 100px;
+}
+.center-content p{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+
+}
+
+
+.our-logo{
+    font-family: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+
+}
+
+.navigation-login a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation-login a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:  3px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform: scaleX(0)
+}
+
+.navigation-login a:hover::after{
+    transform-origin: left;
+    transform:scaleX(1)
+
+}
+
+.navigation-login .btnlogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: 1.1em;
+    color: rgb(47, 0, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 2.5s;
+}
+
+.navigation-login .btnlogin:hover{
+    background: burlywood;
+    color: black;
+}
+
+
+.huge{
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+h1{
+    color: palevioletred;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.footer {
+    background: rgb(0, 0, 0);
+  padding: 0px ;
+  margin: 2%;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 0px 20px 20px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.text-sm{
+    color: palevioletred;
+}
+.btn-btn-sub{
+    height: 30px;
+    width: 80px;
+    color: black;
+    font-weight: 500;
+}
+h4{
+    color: palevioletred;
+}
+hr{
+    color: hotpink;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="our-logo">TechTribe</h2>
+        <nav class="navigation-login">
+            <a href="home.html">home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html" target="_blank">courses</a>
+            <a href="team.html">Team</a>
+            <button class="btnlogin"><a href="login.html">Logout</a></button>
+        </nav>
+    </header>
+    
+        <hr>
+        <footer class="footer bg-white">
+            <div class="container">
+              <div class="footer-grid">
+                <div>
+                  <a href="home.html">
+                    <h3>TechTribe</h3>
+                  </a>
+                  <div class="card">
+                    <h4>Subscribe to Newsletter</h4>
+                    <p class="text-sm">
+                      Subscribe now to receive tips on how to take your business to
+                      the next level.
+                    </p>
+                    <form>
+                      <input type="email" id="email" placeholder="Enter your email" />
+                      <button type="submit" class="btn-btn-sub" onclick="displayMessage()" value="show alert box">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                  <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                  <h4>Company</h4>
+                  <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="article.html">Our Process</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Resources</h4>
+                  <ul>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="notavailable.html">Research</a></li>
+                    <li><a href="notavailable.html">Upcoming Projects</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Contact</h4>
+                  <ul>
+                    <li>
+                      <a href="notavailable.html">techtribeofficial@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <hr>
+</body>
+<script src="script.js"></script>
+</html>
