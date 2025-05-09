@@ -8,12 +8,13 @@
         *{
     margin-left: 50px;
     margin-right: 50px;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
+    padding: 30px;
     margin-top: 200px;
     justify-content: center;
     align-items: center;
@@ -193,6 +194,16 @@ h4{
 hr{
     color: hotpink;
 }
+.course-completion{
+    text-align: center;
+    color: white;
+    background-color: orangered;
+    font-size: 50px;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+}
     </style>
 </head>
 <body>
@@ -206,6 +217,116 @@ hr{
             <button class="btnlogin"><a href="login.html">Logout</a></button>
         </nav>
     </header>
+
+    <h2>Introduction to Software Engineering</h2>
+    
+    <h1>Definition and Importance:</h1> 
+    <p>Software engineering is a disciplined and systematic approach to the development, operation, maintenance, and retirement of software. This module begins by distinguishing between ad-hoc programming and structured software engineering. It explains the importance of engineering principles in avoiding chaos in large-scale projects and ensuring that software is reliable, maintainable, scalable, and fulfills user requirements.
+    
+        History and Evolution: This section explores the birth of software engineering as a distinct discipline, from the software crisis in the 1960s to the rise of Agile, DevOps, and continuous integration practices. Students will examine historical milestones like the introduction of object-oriented programming, the Agile Manifesto, and the emergence of cloud-native development.
+        
+        Software vs. Programs: Here, we explain the difference between simple scripts or programs written to solve single problems and fully-fledged software systems that are designed for long-term use, involve teams of developers, and require extensive planning, documentation, and maintenance.
+        
+        Roles and Responsibilities of a Software Engineer: Students learn about different roles within a software team including software developers, quality assurance engineers, system architects, DevOps engineers, UI/UX designers, and product managers. This section also emphasizes the importance of soft skills such as communication, teamwork, and problem-solving.
+        
+        Ethics in Software Engineering: Software engineers must uphold ethical standards to avoid harm to users, ensure data privacy, and promote fairness. Topics include intellectual property, professional integrity, responsible AI, and the ethical dilemmas faced in real-world situations.
+        
+        </p>
+    
+    <h2>Software Development Life Cycle (SDLC)</h2>
+    
+        <p>    Phases of SDLC: A deep dive into the lifecycle stages: requirement analysis, system design, implementation (coding), testing, deployment, and maintenance. Each phase is discussed with its goals, deliverables, participants, and common challenges.
+    
+            SDLC Models: Students learn the characteristics, advantages, and drawbacks of Waterfall, Spiral, Iterative, V-Model, Agile, and hybrid models. Case studies demonstrate where each model is applicable. Special focus is placed on Agile methodologies like Scrum and Kanban.
+            
+            Requirements Engineering: This includes stakeholder analysis, gathering functional and non-functional requirements, creating use cases, writing software requirements specifications (SRS), and validating requirements with users.
+            
+            Software Process Models: Covers formal process models, their adoption in organizations, and how they ensure quality and manage risk. Includes Capability Maturity Model Integration (CMMI) and ISO/IEC 12207.
+            
+            Documentation and Specification Standards: Teaches students to write effective documentation using IEEE standards. Students create requirement documents, design specifications, technical guides, and user manuals.
+            
+            </p>
+    
+    <h2>Software Design and Architecture</h2>
+    
+            <p> Principles of Software Design: Introduces principles like modularity, separation of concerns, abstraction, encapsulation, and the SOLID principles. Each is explained with examples and real-world applications.
+    
+                Software Design Patterns: Covers common patterns such as Singleton, Factory, Observer, Decorator, Adapter, and Strategy. Students learn when to use each pattern and implement them in code.
+                
+                UML Diagrams: Students learn to model systems using diagrams: class diagrams for structure, sequence diagrams for interactions, use case diagrams for requirements, and activity diagrams for workflows.
+                
+                Architectural Styles: Compares architectures including monolithic, microservices, layered, event-driven, serverless, and service-oriented architectures (SOA). Each style is evaluated based on scalability, maintainability, and fault tolerance.
+                
+                Designing for Scalability and Maintainability: Topics include database sharding, caching, load balancing, code refactoring, dependency injection, and system modularity. Emphasis is placed on anticipating future needs and minimizing technical debt.
+                
+                </p>
+
+    
+    <h2>Programming Foundations</h2>
+    
+    <p>Programming Paradigms: This section introduces various programming paradigms and explains how they influence the way problems are approached and solved in code. It includes:
+    
+        Procedural Programming: Based on structured steps and subroutines.
+        
+        Object-Oriented Programming (OOP): Focuses on classes, objects, inheritance, and encapsulation. Emphasizes reusability and modularity.
+        
+        Functional Programming: Based on mathematical functions, immutability, and higher-order functions.
+        
+        Declarative and Event-Driven Paradigms: Includes languages and frameworks that abstract control flow, such as SQL and reactive programming in front-end development.
+        
+        
+        Languages and Platforms: This section introduces the most widely-used programming languages and their ecosystems:
+        
+        Python: Easy syntax, extensive libraries for data science and web development.
+        
+        Java: Object-oriented, platform-independent, used for enterprise and Android applications.
+        
+        C++/C#: Systems and desktop applications, game development.
+        
+        JavaScript: Core language for web development.
+        
+        Go, Rust, Ruby, PHP, Kotlin, Swift: Overview of their features, strengths, and suitable applications. Students also learn how to set up development environments using IDEs (e.g., VS Code, IntelliJ, Eclipse).
+        
+        </p>
+    <h2>Data Structures and Algorithms</h2>
+        <p>    Critical for performance and problem-solving. Students study:
+    
+            Basic Structures: Arrays, linked lists, stacks, queues, hash tables.
+            
+            Advanced Structures: Trees (binary, AVL), graphs, heaps, tries.
+            
+            Algorithms: Sorting (quick, merge, bubble), searching (binary, DFS, BFS), recursion, dynamic programming.
+            
+            Big-O Notation: Analysis of algorithm complexity and efficiency.
+            Code Quality and Best Practices: Good software is not only functional but also readable and maintainable. Topics include:
+    
+            Writing clean, readable code.
+            
+            Commenting and documentation standards.
+            
+            Refactoring techniques.
+            
+            Naming conventions and consistent styling (e.g., PEP8 for Python).
+            
+            Avoiding anti-patterns.</p>
+    
+    
+
+    
+    
+            <p>    Version Control with Git: A vital skill for collaboration and project management:
+    
+                Core Concepts: Repositories, commits, branches, merges.
+                
+                Remote Repositories: GitHub, GitLab, Bitbucket.
+                
+                Workflows: Feature branching, pull requests, merge conflicts, rebasing.
+                
+                Best Practices: Commit messages, tagging, release management.</p>
+
+                <a href="cert.html" class="course-completion">MARK AS COMPLETE</a>
+    
+    
     
         <hr>
         <footer class="footer bg-white">
