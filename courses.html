@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
     <script>
-        onload = console.log("SUCESSFULLY LOGGED IN")
-        onload = entered()
+        //onload = alert("SUCESSFULLY LOGGED IN")
 
-        function show_alert(){
-            alert("LOGGED IN SUCCESSFULLY")
+       function show_alert(){
+           alert("LOGGED IN SUCCESSFULLY")
         } 
         onload = show_alert
     </script>
@@ -127,96 +126,7 @@ p{
     color: black;
 }
 
-.wrapper{
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border:2px solid greenyellow;
-    border-radius: 15px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: height .2s ease;
-    transition: transform .5s , height .2s ease;
-}
 
-.wrapper.active-popup{
-    transform: scale(1);
-}
-
-.wrapper .form-box{
-    width: 100%;
-    padding: 40px;
-
-}
-.wrapper .form-login-box{
-    transition: transform .18s ease;
-    transform: translateX(0);
-
-}
-.wrapper .form-login-box{
-    display: none;
-
-}
-.wrapper.active .form-login-box{
-    transition: none;
-    transform: translateX(-400px);
-}
-.form-login-box h2{
-    font-size: 2em;
-    color: indigo;
-    text-align: center;
-}
-.wrapper.active .form-registration-box{
-    transition: transform .18s ease;
-    transform: translateX(0);
-
-}
-.form-registration-box h2{
-    font-size: 2em;
-    color: indigo;
-    text-align: center;
-
-}
-.wrapper .icon-close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: aquamarine;
-    font-size: 2em;
-    color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
-}
-.wrapper .form-login-box{
-    width: 100px;
-    padding: 40px;
-}
-.wrapper .form-registration-box{
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid greenyellow;
-    margin: 30px 0;
-    
-}
 
 .input-box input:focus~label,
 .input-box input:valid~label{
@@ -224,59 +134,7 @@ p{
 
 }
 
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: aquamarine;
-    font-weight: 500;
-    pointer-events: none;
-    transition: 3s;
-}
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    border: none;
-    font-size: 1em;
-    color: greenyellow;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: indigo;
-    line-height: 57px;
-}
-
-.rem-forgot-pwd{
-    font-size: .9em;
-    color: blanchedalmond;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-.rem-forgot-pwd label input{
-    accent-color: yellowgreen;
-    margin-right: 3px;
-
-}
-.rem-forgot-pwd a{
-    color: yellowgreen;
-    text-decoration: none;
-
-}
-.rem-forgot-pwd a:hover{
-    text-decoration: underline;
-}
 .btn{
     width: 100%;
     height: 45px;
@@ -290,23 +148,7 @@ p{
     font-weight: 500;
 
 }
-.login-register{
-    font-size: .9em;
-    color: blanchedalmond;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-}
 
-.login-register p a{
-    color: yellowgreen;
-    font-weight: 600;
-    text-decoration: none;
-}
-.login-register p a:hover{
-    text-decoration: underline;
-
-}
 
 button{
     height: 35px;
@@ -330,8 +172,8 @@ h6{
 }
 span{
     font-weight: 900;
-    text-shadow: 0 0 25px white;
-    color: yellow;
+    text-shadow: 0 0 30px white;
+    color: rgb(255, 0, 212);
     text-shadow: whitesmoke 30px;
     border-color: solid white 10px;
 

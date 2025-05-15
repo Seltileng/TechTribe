@@ -51,12 +51,6 @@ function loginMessage(){
 
 
 
-function loginCred(){ if(user) { 
-    window.location.href = "login.html"
 
-}
-else{
-    console.log("HTTP REQUEST REJECTED")
-}
-}
+
 

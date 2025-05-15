@@ -282,7 +282,7 @@
                     <label><input type="checkbox">I agree to the Terms & Conditions </label>
                     <a href="#">Terms & Conditions</a>
                 </div>
-                <button type="submit" class="btn" onclick="loginMessage()"><a href="courses.html">LOGIN</a></button>
+                <button type="submit" class="btn" onclick="loginMessage()" onclick="loginCred()"><a href="courses.html">LOGIN</a></button>
                 <div class="login-register">
                     <p>Don't have an account?<a href="signup.html" class="register-link">sign up</a></p>
                 </div>
@@ -293,7 +293,10 @@
 <script src="script.js">
 </script>
 <script>
-    
+    function loginCred(){ 
+    window.location.href = "courses.html"
+
+}
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
